@@ -21,11 +21,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "]"  |  |   $   |  N   |  M   |  ,  |  .  |   /   | SHIFT |
 //                     | ALT  | CTRL |LOWER |  BKSPC |  | ENTER | SPACE| LGUI | "[" |
             bindings = <
-&kp GRAVE &kp N1 &kp N2 &kp N3    &kp N4     &kp N5                        &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
-&kp TAB   &kp Q  &kp W  &kp E     &kp R      &kp T                         &kp Y      &kp U    &kp I     &kp O   &kp P    &kp BSLH
-&kp ESC   &kp A  &kp S  &kp D     &kp F      &kp G                         &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C     &kp V      &kp B    &kp RBKT  &kp DOLLAR &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LALT  &kp LCTRL  &kp BSPC &mo 1     &kp ENTER  &kp SPACE  &kp RGUI &kp LBKT
+&kp GRAVE &kp N1 &kp N2 &kp N3    &kp N4     &kp N5                     &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
+&kp TAB   &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp Y      &kp U    &kp I     &kp O   &kp P    &kp BSLH
+&kp ESC   &kp A  &kp S  &kp D     &kp F      &kp G                      &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp SQT
+&kp LSHFT &kp Z  &kp X  &kp C     &kp V      &kp B &kp RBKT  &kp DOLLAR &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                        &kp LALT  &kp LCTRL  &mo 1 &kp BSPC  &kp ENTER  &kp SPACE  &kp RGUI &kp LBKT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -43,7 +43,7 @@
 &kp F1           &kp F2            &kp F3            &kp F4        &kp F5       &kp F6                          &kp KP_N7   &kp KP_N8     &kp KP_N9       &kp HOME      &kp CAPS     &kp PG_UP
 &kp F7           &kp F9            &kp F9            &kp F10       &kp F11      &kp F12                         &kp KP_N4   &kp KP_N5     &kp KP_N6       &kp END       &kp UP       &kp PG_DN
 &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &kp C_VOL_UP  &kp C_PREV   &kp C_NEXT   &kp C_PP &kp PSCRN &kp KP_N1   &kp KP_N2     &kp KP_N3       &kp LEFT      &kp DOWN     &kp RIGHT
-                                                     &kp C_VOL_DN  &kp C_MUTE   &kp DEL      &trans   &trans    &kp KP_N0   &kp KP_DOT    &kp RCTRL
+                                                     &kp C_VOL_DN  &kp C_MUTE   &trans        &kp DEL &trans    &kp KP_N0   &kp KP_DOT    &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
